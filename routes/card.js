@@ -8,8 +8,8 @@ export default function Card_Navigation() {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="CardList">
-                <Stack.Screen name="CardList" component={CardList} />
-                <Stack.Screen name="Details" component={Card_back} />
+                <Stack.Screen name="地點清單" component={CardList} />
+                <Stack.Screen name="地點資訊" component={Card_back} />
             </Stack.Navigator>
         </NavigationContainer>
 

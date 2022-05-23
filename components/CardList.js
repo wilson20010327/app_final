@@ -10,7 +10,7 @@ export default function CardList({ navigation }) {
         flexGrow: 1,
       }} renderItem={({ item }) => (
         <View style={styles.card}>
-          <Card_front data={item} onPress={() => navigation.push("Details", {
+          <Card_front data={item} onPress={() => navigation.push("地點資訊", {
             id: item.Name,
           })
           }
