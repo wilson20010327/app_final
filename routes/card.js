@@ -6,12 +6,11 @@ const Stack = createStackNavigator();
 
 export default function Card_Navigation() {
     return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="CardList">
-                <Stack.Screen name="地點清單" component={CardList} />
-                <Stack.Screen name="地點資訊" component={Card_back} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <Stack.Navigator initialRouteName="CardList">
+            <Stack.Screen name="地點清單" component={CardList} />
+            <Stack.Screen name="地點資訊" component={Card_back} />
+        </Stack.Navigator>
+
 
     );
 }

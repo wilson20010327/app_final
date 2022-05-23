@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     color: 'rgba(255 ,255 ,255 , 0.87)',
   },
   cardContent: {
-    flex: 1.75,
+    flex: 1.70,
     flexDirection: 'row',
     alignItems: 'flex-start',
     paddingTop: 16,

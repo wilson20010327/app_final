@@ -52,7 +52,7 @@ export default class CardImage extends Component {
 
 const styles = StyleSheet.create({
   cardImage: {
-    flex: 1.25,
+    flex: 1.30,
     flexDirection: 'row',
     backgroundColor: 'grey',
     alignSelf: 'stretch',
