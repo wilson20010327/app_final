@@ -63,7 +63,7 @@ export default function CardList({navigation}) {
         search_text = val;
     }
     const onPress = () => {
-        console.log("Typed :", search_text);
+        //console.log("Typed :", search_text);
         search_result = search_in_data(search_text);
         SetInput(search_result);
     };

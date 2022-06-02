@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     color: 'rgba(255 ,255 ,255 , 0.87)',
   },
   cardTitle: {
-    flex: 0.4,
+    flex: 0.5,
     flexDirection: 'row',
     alignItems: 'flex-start',
     paddingRight: 16,

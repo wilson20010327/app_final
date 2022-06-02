@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text, View, Dimensions } from "react-native";
-import Androw from "react-native-androw";
+//import Androw from "react-native-androw";
 import StarReview from "react-native-star-review";
 import ImageContainer from "../ImageContainer/ImageContainer";
 import styles, {
@@ -57,7 +57,7 @@ const CardContainer = props => {
   };
 
   return (
-    <Androw style={container(width, height, borderRadius, backgroundColor)}>
+    <View style={container(width, height, borderRadius, backgroundColor)}>
       <ImageContainer {...props} />
       <View style={styles.contentContainer}>
         <Text style={titleStyle(titleColor)}>{title}</Text>
@@ -85,7 +85,7 @@ const CardContainer = props => {
           </View>
         </View>
       </View>
-    </Androw>
+    </View>
   );
 };
 

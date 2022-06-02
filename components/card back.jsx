@@ -26,7 +26,7 @@ export default function Card_back({ route, navigation }) {
           <CardTitle
             subtitle={"tag : "+item.tag}
             style={{
-              flex: 0.15,
+              flex: 0.13,
               width: "100%",
               backgroundColor: "#eee",
               borderStyle: "dotted", // 虚线 效果

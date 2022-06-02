@@ -1,27 +1,16 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Alert, FlatList } from "react-native";
+import Card_back from "../components/card back";
+import TripList from "../components/TripList"
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+const Stack = createStackNavigator();
 
-export default function Trip() {
-  return (
-    <View style={styles.container}>
-        <Text>I am Trip</Text>
-    </View>
-  );
+export default function Card_Navigation() {
+    return (
+        <Stack.Navigator initialRouteName="CardList">
+            <Stack.Screen name="地點清單" component={TripList} options={{ headerShown: false } }/>
+            <Stack.Screen name="地點資訊" component={Card_back}/>
+        </Stack.Navigator>
+
+
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  card: {
-    paddingTop: 30,
-    paddingBottom: 20,
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
