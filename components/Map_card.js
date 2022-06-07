@@ -6,13 +6,13 @@ export default function Map_card({navigation}) {
     return (
         <PagerView style={styles.pagerView} initialPage={0}>
             <View style={styles.container} key="1">
-                <Image resizeMode='center' style={styles.pagerView} source={require('../assets/map_L.jpg')}/>
+                <Image  style={styles.pagerView} source={require('../assets/map_L.jpg')}/>
             </View>
             <View style={styles.container} key="2">
-            <Image resizeMode='center' style={styles.pagerView} source={require('../assets/map_M.jpg')}/>
+            <Image style={styles.pagerView} source={require('../assets/map_M.jpg')}/>
             </View>
             <View style={styles.container} key="3">
-            <Image resizeMode='center' style={styles.pagerView} source={require('../assets/map_R.jpg')}/>
+            <Image style={styles.pagerView} source={require('../assets/map_R.jpg')}/>
             </View>
         </PagerView>
     );
@@ -20,13 +20,13 @@ export default function Map_card({navigation}) {
 
 const styles = StyleSheet.create({
     pagerView: {
-        
+        width:'100%',
         flex: 1,
     },
     container: {
         flex: 1,
         
-        backgroundColor: "pink",
+        backgroundColor:'#E9E5DB',
         alignItems: "center",
         justifyContent: "center",
     },
