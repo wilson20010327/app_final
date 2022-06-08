@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableHighlight, FlatList } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableHighlight, FlatList , Keyboard} from 'react-native';
 import Card_front from "./card_front";
 const data = require("../data.json");
 
@@ -60,12 +60,14 @@ export default function CardList({navigation}) {
     let search_result = [];
     let search_text = "";
     const setSearch = (val) => {
+        
         search_text = val;
     }
     const onPress = () => {
         //console.log("Typed :", search_text);
         search_result = search_in_data(search_text);
         SetInput(search_result);
+        Keyboard.dismiss()
     };
 
     return (
